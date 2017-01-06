@@ -45,7 +45,7 @@ if ($_POST) {
 
     $mailer = new PHPMailer();
     $subject = "Заявка с сайта TradeIn";
-    $to = 'grek.nick.gng@gmail.com'; //ставьте свою почту для тестов 
+    $to = 'orionpro79@gmail.com'; //ставьте свою почту для тестов
  //   $mailer->IsSMTP();
     $mailer->Host = 'smtp.yandex.ru';
     $mailer->Port = 465;
