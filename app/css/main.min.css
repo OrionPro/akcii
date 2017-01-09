@@ -1866,6 +1866,7 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade .apple .apple_calculate #contentSlider,.trade .apple .apple_calculate #contentSlider1{left:40px}
 .trade .apple .apple_calculate #month,.trade .apple .apple_calculate #month1,.trade .apple .apple_calculate .right .team,.trade .apple .apple_calculate .right .text_money{left:0}
 .trade .apple .apple_calculate .right .money,.trade .apple .apple_calculate .right .money1{width:123px}
+.review{padding:100px 0}
 }
 @media only screen and (min-width:1200px){.container{width:1200px}
 }
