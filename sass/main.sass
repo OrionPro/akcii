@@ -1,6 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
-@import "sprite/sprite.sass"
+@import '../sprite/sprite.sass'
 
 // loads Libs SASS
 @import "../app/libs/animate/animate.sass"
@@ -117,7 +117,6 @@ nav[canvas]
 
 	.intermediate_wrap
 		margin-top: 40px
-		form
 		.intermediate_item
 			display: inline-block
 			input
@@ -143,11 +142,10 @@ nav[canvas]
 	
 //	Секция Iphone
 .iphone
-	background: url(../img/iphone_bg.jpg)
-	background-position: center top
+	background: url(../img/iphone_bg.jpg) center top
 	min-height: 750px
 	h2
-		margin-top: 200px
+		margin-top: 190px
 		margin-bottom: 70px
 	p
 		font: 18px "LatoLight"
@@ -157,7 +155,6 @@ nav[canvas]
 
 .trade
 	background-color: #f3f3f3
-	padding-bottom: 100px
 	padding-top: 50px
 	h2
 		text-align: center
@@ -167,7 +164,7 @@ nav[canvas]
 		margin-top: 0px
 		margin-bottom: 40px
 	.apple
-		padding-bottom: 90px
+		padding-bottom: 190px
 		.apple_ico
 			padding-bottom: 15px
 			padding-right: 10px
@@ -245,7 +242,7 @@ nav[canvas]
 				position: absolute
 				width: 80px
 				top: -20px
-				left: 26px
+				left: 29px
 				background-color: #f2f2f2
 				border: 0px
 				color: #498ef3
@@ -256,10 +253,7 @@ nav[canvas]
 				width: 430px
 				height: 74px
 				display: block
-				margin: 60px auto 0px auto		
-
-	
-
+				margin: 60px auto 0px auto
 			.right
 				width: 49%
 				height: 160px
@@ -290,14 +284,14 @@ nav[canvas]
 					background-color: #f2f2f2
 					border: 0px
 					right: 0px
-					font: 20px "LatoBold"
-					color: #498ef3
+					font: 23px "LatoBold"
+					color: #5CB888
 
 //	Секция	review
 
 .review
 	background-color: #fff
-	padding: 180px 0px
+	padding: 190px 0px
 	h2
 		margin-top: 0px
 		text-align: center
@@ -381,14 +375,11 @@ nav[canvas]
 		width: 430px
 		height: 74px
 
-
-
-
 //	Секция table
 
 .table_section
 	background-color: #fff
-	padding: 190px 0px 90px 0px
+	padding: 190px 0 0 0
 	font: 18px "LatoLight"
 	color: #2f2f2f
 	i
@@ -419,7 +410,7 @@ nav[canvas]
 //	Секция question
 .question
 	background-color: #fff
-	padding: 100px 0px
+	padding: 190px 0px
 	h2
 		margin-bottom: 40px
 		margin-top: 0px
@@ -436,7 +427,7 @@ nav[canvas]
 			border: 0px
 			padding: 0px 20px
 			font: 18px "LatoLight"
-			color: #8e8e8e
+			color: #262626
 			outline: none
 			-webkit-appearance: none
 			-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.35)
@@ -451,9 +442,10 @@ nav[canvas]
 			&:-ms-input-placeholder
 				color: #8e8e8e
 	strong
+		margin-bottom: 10px
+		display: inline-block
 		font: 18px "LatoLight"
 		text-align: left
-		margin-bottom: 10px
 		font-weight: 600
 	button
 		display: block
@@ -472,7 +464,7 @@ nav[canvas]
 			padding: 15px 20px
 			outline: none
 			font: 18px "LatoLight"
-			color: #8e8e8e
+			color: #262626
 			-webkit-appearance: none
 			-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35)
 			-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35)
@@ -511,6 +503,7 @@ nav[canvas]
 				width: 235px
 			&.form_error_quest
 				display: block
+
 		.modal_error_chest_img_quest
 			width: 9px
 			position: relative
@@ -530,7 +523,6 @@ nav[canvas]
 .footer
 	background-color: #353f49
 	min-height: 100px
-	flex: 0 0 auto	
 	p
 		padding: 35px 15px 35px 15px
 		text-align: center

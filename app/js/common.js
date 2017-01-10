@@ -92,7 +92,7 @@ $('.third_number').animateNumber({
 
 
 $("#slider").slider({
-    value: 40000,
+    value: 50000,
     min: 100,
     max: 100000,
     step: 100,
@@ -105,7 +105,7 @@ $("#slider").slider({
 $("#contentSlider").val($("#slider").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 
 $("#month").slider({
-    value: 1,
+    value: 6,
     min: 1,
     max: 12,
     step: 1,
@@ -119,7 +119,7 @@ $("#contentMonth").val($("#month").slider("value").toString().replace(/(\d)(?=(\
 
 
 $("#slider1").slider({
-    value: 40000,
+    value: 50000,
     min: 100,
     max: 100000,
     step: 100,
@@ -132,7 +132,7 @@ $("#slider1").slider({
 $("#contentSlider1").val($("#slider").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 
 $("#month1").slider({
-    value: 1,
+    value: 6,
     min: 1,
     max: 12,
     step: 1,
@@ -159,13 +159,15 @@ $(document).ready(function () {
         }
 
         // анимации - animate.css
-        $(".header_title h1, .header_nav, .header_logo, .header .container .callback, .header_title p, .header_title button").animated("fadeInUp");
-        $(".iphone h2, .iphone p, .trade h2, .trade h3, .trade .apple .apple_trade, .trade .apple .apple_text p, .trade .apple .apple_calculate").animated("fadeInUp");
-        $(".review h2, .review .rev_item .left_review, .review .rev_item .right_review").animated("fadeInUp");
-        $(".review .rev_item .rev_info_block").animated("fadeInRight");
-        $(".review .rev_item .rev_info_block_right").animated("fadeInLeft");
-        $(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr").animated("fadeInUp");
-        $(".question h2, .question p, .question strong , .question .inline_input input, .question .textarea_input textarea, .question button").animated("fadeInUp");
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            $(".header_title h1, .header_nav, .header_logo, .header .container .callback, .header_title p, .header_title button").animated("fadeInUp");
+            $(".iphone h2, .iphone p, .trade h2, .trade h3, .trade .apple .apple_trade, .trade .apple .apple_text p, .trade .apple .apple_calculate").animated("fadeInUp");
+            $(".review h2, .review .rev_item .left_review, .review .rev_item .right_review").animated("fadeInUp");
+            $(".review .rev_item .rev_info_block").animated("fadeInRight");
+            $(".review .rev_item .rev_info_block_right").animated("fadeInLeft");
+            $(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr").animated("fadeInUp");
+            $(".question h2, .question p, .question strong , .question .inline_input input, .question .textarea_input textarea, .question button").animated("fadeInUp");
+        }
 
         // инициализация скроллбара
         $(".table_sections_wrap_table").mCustomScrollbar({
@@ -287,14 +289,14 @@ $(document).ready(function () {
                     $(this).siblings().show("fade", 500);
                     error.push(true); // ошибка 
                     if ($(this).siblings().hasClass('input_error_phone')) {
-                        $(this).siblings().removeClass('input_error_phone').text("").prepend("Заполните поле<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
+                        $(this).siblings().removeClass('input_error_phone').text("").prepend("Заполните поле<div class='modal_error_chest_img modal_error_chest_img_quest'></div><div class='modal_error_triangle modal_error_triangle_quest'></div>");
                     }
                 } else if ($(this).val() !== '') {
                     if ($(this).val().match(pattern)) {
                         $(this).siblings().hide("fade", 500);
                         error.push(false); // нет ошибок
                     } else {
-                        $(this).siblings().show("fade", 500).addClass('input_error_phone').text("").prepend("Введите правильный телефон<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
+                        $(this).siblings().show("fade", 500).addClass('input_error_phone').text("").prepend("Введите правильный телефон<div class='modal_error_chest_img modal_error_chest_img_quest'></div><div class='modal_error_triangle modal_error_triangle_quest'></div>");
                         error.push(true); // ошибка  
                     }
                 }
