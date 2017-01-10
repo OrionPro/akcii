@@ -68,6 +68,7 @@ gulp.task('scripts', function() {
 		'app/libs/GreenSock-JS/TweenMax.min.js',
 		'app/libs/GreenSock-JS/DrawSVGPlugin.min.js',
 		'app/libs/animate/animate-css.js',
+		'app/libs/jquery/jquery.ui.touch-punch.min.js',
 		'app/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js',
 		'app/libs/jquery.animateNumber/jquery.animateNumber.min.js',
 		'app/libs/slidebars/slidebars.min.js',

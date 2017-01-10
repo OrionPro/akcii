@@ -92,7 +92,7 @@ $('.third_number').animateNumber({
 
 
 $("#slider").slider({
-    value: 40000,
+    value: 50000,
     min: 100,
     max: 100000,
     step: 100,
@@ -105,7 +105,7 @@ $("#slider").slider({
 $("#contentSlider").val($("#slider").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 
 $("#month").slider({
-    value: 1,
+    value: 6,
     min: 1,
     max: 12,
     step: 1,
@@ -119,7 +119,7 @@ $("#contentMonth").val($("#month").slider("value").toString().replace(/(\d)(?=(\
 
 
 $("#slider1").slider({
-    value: 40000,
+    value: 50000,
     min: 100,
     max: 100000,
     step: 100,
@@ -132,7 +132,7 @@ $("#slider1").slider({
 $("#contentSlider1").val($("#slider").slider("value").toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 
 $("#month1").slider({
-    value: 1,
+    value: 6,
     min: 1,
     max: 12,
     step: 1,
@@ -289,14 +289,14 @@ $(document).ready(function () {
                     $(this).siblings().show("fade", 500);
                     error.push(true); // ошибка 
                     if ($(this).siblings().hasClass('input_error_phone')) {
-                        $(this).siblings().removeClass('input_error_phone').text("").prepend("Заполните поле<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
+                        $(this).siblings().removeClass('input_error_phone').text("").prepend("Заполните поле<div class='modal_error_chest_img modal_error_chest_img_quest'></div><div class='modal_error_triangle modal_error_triangle_quest'></div>");
                     }
                 } else if ($(this).val() !== '') {
                     if ($(this).val().match(pattern)) {
                         $(this).siblings().hide("fade", 500);
                         error.push(false); // нет ошибок
                     } else {
-                        $(this).siblings().show("fade", 500).addClass('input_error_phone').text("").prepend("Введите правильный телефон<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
+                        $(this).siblings().show("fade", 500).addClass('input_error_phone').text("").prepend("Введите правильный телефон<div class='modal_error_chest_img modal_error_chest_img_quest'></div><div class='modal_error_triangle modal_error_triangle_quest'></div>");
                         error.push(true); // ошибка  
                     }
                 }
