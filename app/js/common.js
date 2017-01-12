@@ -152,6 +152,7 @@ function money(month, content, elem) {
 
 $(document).ready(function () {
         //анимации
+    
         var tl1 = new TimelineMax(); // анимация кругов
         if (window.matchMedia("(min-width: 992px)").matches) {
 
