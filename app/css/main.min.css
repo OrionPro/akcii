@@ -1676,8 +1676,8 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1,.trade .apple .apple_calculate .slider,.trade .apple .apple_calculate .slider1{width:215px;height:4px;background:#3b454e;position:absolute;top:70px;padding:0 10px;outline:0}
 .trade .apple .apple_calculate .month .ui-slider-handle,.trade .apple .apple_calculate .month1 .ui-slider-handle,.trade .apple .apple_calculate .slider .ui-slider-handle,.trade .apple .apple_calculate .slider1 .ui-slider-handle{width:40px;height:41px;position:absolute;top:-18px;margin-left:-24px;z-index:200;outline:0;background:url(../img/slider_btn.png)}
 .trade .apple .apple_calculate .month .ui-widget-header,.trade .apple .apple_calculate .month1 .ui-widget-header,.trade .apple .apple_calculate .slider .ui-widget-header,.trade .apple .apple_calculate .slider1 .ui-widget-header{outline:0;background:#498ef3;height:4px;left:0;top:0;position:absolute}
-.trade .apple .apple_calculate #contentMonth,.trade .apple .apple_calculate #contentMonth1,.trade .apple .apple_calculate #contentSlider,.trade .apple .apple_calculate #contentSlider1{position:absolute;width:80px;top:-20px;left:29px;background-color:#f2f2f2;border:0;color:#498ef3;font:17px LatoBold}
-.trade .apple .apple_calculate #contentMonth,.trade .apple .apple_calculate #contentMonth1{left:47px}
+.trade .apple .apple_calculate .contentMonth,.trade .apple .apple_calculate .contentMonth1,.trade .apple .apple_calculate .contentSlider,.trade .apple .apple_calculate .contentSlider1{position:absolute;width:80px;top:-20px;left:29px;background-color:#f2f2f2;border:0;color:#498ef3;font:17px LatoBold}
+.trade .apple .apple_calculate .contentMonth,.trade .apple .apple_calculate .contentMonth1{left:47px}
 .trade .apple .apple_calculate button{width:430px;height:74px;display:block;margin:60px auto 0}
 .trade .apple .apple_calculate .right{width:49%;height:160px;position:relative;display:inline-block}
 .trade .apple .apple_calculate .right p{font:20px LatoBold;color:#2f2f2f}
@@ -1860,8 +1860,8 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .dm-modal button{height:54px}
 }
 @media only screen and (max-width:736px) and (orientation:landscape){.trade .apple .apple_calculate .left .team,.trade .apple .apple_calculate .left .text_money,.trade .apple .apple_calculate .slider,.trade .apple .apple_calculate .slider1{left:0}
-.trade .apple .apple_calculate #contentSlider,.trade .apple .apple_calculate #contentSlider1{left:7px;top:-30px}
-.trade .apple .apple_calculate #contentMonth,.trade .apple .apple_calculate #contentMonth1{left:32px;top:-24px}
+.trade .apple .apple_calculate .contentSlide,.trade .apple .apple_calculate .contentSlider1{left:7px;top:-30px}
+.trade .apple .apple_calculate .contentMonth,.trade .apple .apple_calculate .contentMonth1{left:32px;top:-24px}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1,.trade .apple .apple_calculate .right .team,.trade .apple .apple_calculate .right .text_money{left:0}
 .trade .apple .apple_calculate .right .money,.trade .apple .apple_calculate .right .money1{width:130px;font-size:20px;bottom:-1px}
 }
@@ -1874,8 +1874,8 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .modal_form_input_wrap .modal_input_error{right:0}
 .intermediate .intermediate_title h3{font-size:20px}
 .trade .apple .apple_calculate .left .team,.trade .apple .apple_calculate .left .text_money,.trade .apple .apple_calculate .slider,.trade .apple .apple_calculate .slider1{left:0}
-.trade .apple .apple_calculate #contentSlider,.trade .apple .apple_calculate #contentSlider1{left:7px;top:-30px}
-.trade .apple .apple_calculate #contentMonth,.trade .apple .apple_calculate #contentMonth1{left:32px;top:-24px}
+.trade .apple .apple_calculate .contentSlider,.trade .apple .apple_calculate .contentSlider1{left:7px;top:-30px}
+.trade .apple .apple_calculate .contentMonth,.trade .apple .apple_calculate .contentMonth1{left:32px;top:-24px}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1,.trade .apple .apple_calculate .right .team,.trade .apple .apple_calculate .right .text_money{left:0}
 .trade .apple .apple_calculate .right .money,.trade .apple .apple_calculate .right .money1{width:130px;font-size:20px;bottom:-1px}
 .review{padding:100px 0}
