@@ -1646,15 +1646,17 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .intermediate .intermediate_wrap{margin-top:40px}
 .intermediate .intermediate_wrap .intermediate_item{display:inline-block}
 .intermediate .intermediate_wrap .intermediate_item input{width:260px;display:inline-block;border:1px solid #a2b6c9;background:#fff;color:#43637f;height:40px;margin:0 10px;padding:0 0 0 9px}
+.iphone .iphone-img,.iphone h2{margin-top:190px}
 .intermediate .intermediate_wrap .intermediate_item input::-webkit-input-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input:-moz-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input::-moz-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input:-ms-input-placeholder{color:#43637f}
 .intermediate .intermediate_wrap .intermediate_item input[type=submit]{background:#052243;color:#fff}
-.iphone{background:url(../img/iphone_bg.jpg) center top;min-height:750px}
-.iphone h2{margin-top:190px;margin-bottom:70px}
+.iphone,.trade{background-color:#f3f3f3}
+.iphone{min-height:750px}
+.iphone h2{margin-bottom:70px}
 .iphone p{font:18px LatoLight;color:#2f2f2f}
-.trade{background-color:#f3f3f3;padding-top:50px}
+.trade{padding-top:50px}
 .trade h2{text-align:center;margin:0 0 100px}
 .trade h3{font:30px LatoBold;margin-top:0;margin-bottom:40px}
 .trade .apple{padding-bottom:190px}
@@ -1769,8 +1771,11 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 @media only screen and (max-width:991px){.footer p,.trade .apple .apple_calculate{padding-top:30px}
 .header{background:url(../img/header_bg.jpg) center top no-repeat;background-size:cover;height:100%}
 .header_nav{display:none}
+.header_logo{display:block}
 .header_modal{margin-top:40px}
-.trade h2{font-size:30px}
+.iphone-img{text-align:center}
+.iphone-img img{display:inline-block}
+.trade h2{margin-top:80px;font-size:36px}
 .footer p{font-size:14px}
 .header .container .callback{top:58px}
 .header i{top:73px;right:15px}
@@ -1783,8 +1788,8 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .header .header_bot_txt .header_item:first-of-type{margin-left:0}
 .header .header_bot_txt .header_item:last-of-type{margin-right:0}
 .header .header_bot_txt .header_item .first,.header .header_bot_txt .header_item .second,.header .header_bot_txt .header_item .third{left:0;right:0;margin:auto}
-.header_logo{display:block;top:61px}
-.iphone h2{margin-bottom:45px;line-height:1.5}
+.header_logo{top:61px}
+.iphone h2{margin-top:80px;margin-bottom:45px;line-height:1.5}
 .iphone p{line-height:1.4;padding-right:90px}
 .trade h3{margin-bottom:30px}
 .trade .apple{padding-bottom:75px}
@@ -1813,20 +1818,21 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .question .textarea_input{clear:both;padding-top:0}
 .inline_input{margin-bottom:30px}
 }
-@media only screen and (max-width:768px){.close{top:20px;right:0}
+@media only screen and (max-width:768px){.header .header_title h1,.header .header_title p,.trade h2{padding-left:15px;padding-right:15px}
+.close{top:20px;right:0}
 .animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important;visibility:visible!important}
 .header_title h1{font-size:30px;margin-top:40px}
 .header_modal{margin-top:40px}
 [off-canvas*=left]{width:255px}
 .header i{right:30px}
 .header .container .callback{position:static;float:left;margin-left:15px}
-.header .header_title h1{font-size:20px;padding-left:15px;padding-right:15px}
-.header .header_title p{font-size:12px;padding-left:15px;padding-right:15px}
-.iphone h2,.trade h2{font-size:23px}
+.header .header_title h1{font-size:20px}
+.header .header_title p{font-size:12px}
 .header .header_title button{width:290px}
 .header .header_bot_txt .header_item{margin:0 auto 90px;display:block}
 .header .header_bot_txt .header_item:nth-last-of-type(2){margin:0 auto 100px}
-.iphone h2{margin-top:100px}
+.iphone h2{margin-top:100px;font-size:23px}
+.trade h2{font-size:23px}
 .trade h3{font-size:18px}
 .trade .apple .apple_trade{height:290px}
 .trade .apple .apple_text p{font-size:14px}
