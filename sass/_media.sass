@@ -69,6 +69,27 @@
 					td
 						padding: 15px
 	.trade
+		h2
+			&.bmw
+				width: 435px
+				display: block
+				margin: 0 auto 240px
+				&:after
+					content: ""
+					position: absolute
+					top: 216px
+					right: 0px
+					background: url(../img/big_bmw_image.png) no-repeat
+					background-size: contain
+					width: 500px
+					height: 200px
+				span
+					& + span
+						font-size: 150px
+						& + span
+							margin-top: 10px
+							font-size: 42px
+
 		.apple
 			.apple_trade
 			.apple_text
@@ -351,11 +372,33 @@
 		h2
 			margin-top: 100px
 			font-size: 23px
+
 	.trade
 		h2
 			font-size: 23px
 			padding-left: 15px
 			padding-right: 15px
+			&.bmw
+				width: 300px
+				display: block
+				margin: 0 auto 240px
+				&:after
+					content: ""
+					position: absolute
+					top: 170px
+					right: 0px
+					background: url(../img/big_bmw_image.png) no-repeat
+					background-size: contain
+					width: 300px
+					height: 100px
+				span
+					font-size: 21px
+					& + span
+						font-size: 96px
+						line-height: 80px
+						& + span
+							margin-top: 10px
+							font-size: 25px
 		h3
 			font-size: 18px
 		.apple

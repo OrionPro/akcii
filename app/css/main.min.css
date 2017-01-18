@@ -1656,8 +1656,14 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .iphone{min-height:750px}
 .iphone h2{margin-bottom:70px}
 .iphone p{font:18px LatoLight;color:#2f2f2f}
+.trade h2.bmw,.trade h2.bmw span{font-size:36px;font-family:LatoLight;color:#2f2f2f;display:inline-block}
 .trade{padding-top:50px}
 .trade h2{text-align:center;margin:0 0 100px}
+.trade h2.bmw{width:844px;margin-left:100px;text-align:left;vertical-align:top;position:relative}
+.trade h2.bmw:after{content:"";position:absolute;top:50px;right:-132px;background:url(../img/big_bmw_image.png) no-repeat;width:647px;height:242px}
+.trade h2.bmw span{text-transform:uppercase;margin-right:20px}
+.trade h2.bmw span+span{font-size:150px;line-height:125px;color:#498ef3;display:inline-block;vertical-align:top}
+.trade h2.bmw span+span+span{margin-top:-40px;font-size:44px;font-family:LatoBold;color:inherit;line-height:0;display:inline-block;text-transform:none}
 .trade h3{font:30px LatoBold;margin-top:0;margin-bottom:40px}
 .trade .apple{padding-bottom:190px}
 .trade .apple .apple_ico{padding-bottom:15px;padding-right:10px}
@@ -1756,6 +1762,10 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .review .rev_item a{right:40px;bottom:35px;font-size:15px}
 .review .rev_item .left_review,.review .rev_item .right_review{width:490px;height:300px}
 .table_section .table tbody tr td{padding:15px}
+.trade h2.bmw{width:435px;display:block;margin:0 auto 240px}
+.trade h2.bmw:after{content:"";position:absolute;top:216px;right:0;background:url(../img/big_bmw_image.png) no-repeat;background-size:contain;width:500px;height:200px}
+.trade h2.bmw span+span{font-size:150px}
+.trade h2.bmw span+span+span{margin-top:10px;font-size:42px}
 .trade .apple .apple_calculate .right .text_money{left:-12px}
 .trade .apple .apple_calculate .right .money,.trade .apple .apple_calculate .right .money1{width:115px;font-size:21px;bottom:-3px}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1,.trade .apple .apple_calculate .slide,.trade .apple .apple_calculate .slider1{width:170px}
@@ -1833,6 +1843,11 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .header .header_bot_txt .header_item:nth-last-of-type(2){margin:0 auto 100px}
 .iphone h2{margin-top:100px;font-size:23px}
 .trade h2{font-size:23px}
+.trade h2.bmw{width:300px;display:block;margin:0 auto 240px}
+.trade h2.bmw:after{content:"";position:absolute;top:170px;right:0;background:url(../img/big_bmw_image.png) no-repeat;background-size:contain;width:300px;height:100px}
+.trade h2.bmw span{font-size:21px}
+.trade h2.bmw span+span{font-size:96px;line-height:80px}
+.trade h2.bmw span+span+span{margin-top:10px;font-size:25px}
 .trade h3{font-size:18px}
 .trade .apple .apple_trade{height:290px}
 .trade .apple .apple_text p{font-size:14px}
