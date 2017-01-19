@@ -1748,6 +1748,7 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 @media only screen and (max-width:1440px){.header_title h1{margin-bottom:15px}
 .header_title button{margin-top:25px}
 .header_bot_txt{bottom:25px}
+.header{min-height:650px}
 }
 @media only screen and (max-width:1200px){.header{height:100vh}
 .header i{color:#fff;display:inline;position:absolute;top:46px;right:15px;font-size:47px}
