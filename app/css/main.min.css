@@ -1662,7 +1662,7 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade h2.bmw{width:844px;margin-left:100px;text-align:left;vertical-align:top;position:relative}
 .trade h2.bmw:after{content:"";position:absolute;top:50px;right:-132px;background:url(../img/big_bmw_image.png) no-repeat;width:647px;height:242px}
 .trade h2.bmw span{text-transform:uppercase;margin-right:20px}
-.trade h2.bmw span+span{font-size:150px;line-height:125px;color:#498ef3;display:inline-block;vertical-align:top}
+.trade h2.bmw span+span{font-size:150px;line-height:125px;color:#498ef3;display:inline-block;vertical-align:top;margin-right:0}
 .trade h2.bmw span+span+span{margin-top:-40px;font-size:44px;font-family:LatoBold;color:inherit;line-height:0;display:inline-block;text-transform:none}
 .trade h3{font:30px LatoBold;margin-top:0;margin-bottom:40px}
 .trade .apple{padding-bottom:190px}
@@ -1716,9 +1716,11 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .table_section h2{text-align:center;margin-top:0;margin-bottom:70px}
 .table_section .table{width:100%;text-align:center;border-collapse:separate}
 .table_section .table .first_col{text-align:left;padding-left:20px}
-.table_section .table th{padding-bottom:15px}
-.question .inline_input input,.question p,.question strong{font:18px LatoLight}
+.table_section .table th{height:60px}
+.table_section .table th.td_main_color{background-color:#498ef3;color:#fff}
 .table_section .table tbody tr td{padding:15px 38px}
+.table_section .table tbody tr td.td_main_color{background-color:#498ef3;color:#fff;font-weight:700}
+.question .inline_input input,.question p,.question strong{font:18px LatoLight}
 .table_section .table .grey{background-color:#f2f2f2}
 .question{background-color:#fff;padding:190px 0}
 .question h2{margin-bottom:40px;margin-top:0;text-align:center}
@@ -1765,7 +1767,8 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .review .rev_item .left_review,.review .rev_item .right_review{width:490px;height:300px}
 .table_section .table tbody tr td{padding:15px}
 .trade h2.bmw{width:435px;display:block;margin:0 auto 240px}
-.trade h2.bmw:after{content:"";position:absolute;top:216px;right:0;background:url(../img/big_bmw_image.png) no-repeat;background-size:contain;width:500px;height:200px}
+.trade h2.bmw:after{content:"";position:absolute;top:245px;right:0;background:url(../img/big_bmw_image.png) no-repeat;background-size:contain;width:500px;height:200px}
+.trade h2.bmw span{margin-right:0}
 .trade h2.bmw span+span{font-size:150px}
 .trade h2.bmw span+span+span{margin-top:10px;font-size:42px}
 .trade .apple .apple_calculate .right .text_money{left:-160px}
@@ -1888,6 +1891,9 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade .apple .apple_calculate .contentMonth,.trade .apple .apple_calculate .contentMonth1{left:32px;top:-24px}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1,.trade .apple .apple_calculate .right .team,.trade .apple .apple_calculate .right .text_money{left:0}
 .trade .apple .apple_calculate .right .money,.trade .apple .apple_calculate .right .money1{width:130px;font-size:20px;bottom:-1px;right:28px}
+.popup.pop4 .dm-modal{max-width:38em}
+}
+@media only screen and (max-width:568px) and (orientation:landscape){.popup.pop4 .dm-modal{max-width:30em}
 }
 @media only screen and (max-width:520px){.dm-modal,.dm-modal input[type=submit]{width:100%}
 }

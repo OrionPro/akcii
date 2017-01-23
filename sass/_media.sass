@@ -81,13 +81,14 @@
 				&:after
 					content: ""
 					position: absolute
-					top: 216px
+					top: 245px
 					right: 0px
 					background: url(../img/big_bmw_image.png) no-repeat
 					background-size: contain
 					width: 500px
 					height: 200px
 				span
+					margin-right: 0
 					& + span
 						font-size: 150px
 						& + span
@@ -575,6 +576,15 @@
 					left: 0
 				.month1
 					left: 0
+	.popup
+		&.pop4
+			.dm-modal
+				max-width: 38em
+@media only screen and (max-width: 568px) and (orientation: landscape)
+	.popup
+		&.pop4
+			.dm-modal
+				max-width: 30em
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 520px)
 	/**/

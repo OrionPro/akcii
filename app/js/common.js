@@ -51,7 +51,7 @@ if ('addEventListener' in document) {
 
 
 $('.first_number').animateNumber({
-		number: 753,
+		number: 13026,
 		easing: 'easeInQuad', // требуется jquery.easing
 
 		numberStep: function (now, tween) {
@@ -64,7 +64,7 @@ $('.first_number').animateNumber({
 	2200
 );
 $('.second_number').animateNumber({
-		number: 912,
+		number: 12740,
 		easing: 'easeInQuad', // требуется jquery.easing
 
 		numberStep: function (now, tween) {
@@ -74,10 +74,10 @@ $('.second_number').animateNumber({
 			target.text(floored_number);
 		}
 	},
-	2300
+	3000
 );
 $('.third_number').animateNumber({
-		number: 432698,
+		number: 627080,
 		easing: 'easeInQuad', // требуется jquery.easing
 
 		numberStep: function (now, tween) {
@@ -87,7 +87,7 @@ $('.third_number').animateNumber({
 			target.text(floored_number);
 		}
 	},
-	2400
+	3400
 );
 
 
@@ -155,7 +155,13 @@ $(document).ready(function () {
 		var tl1 = new TimelineMax(); // анимация кругов
 		if (window.matchMedia("(min-width: 992px)").matches) {
 
-			tl1.from(".header_item_circle", 2, {drawSVG: "0%"}, 0.4).from(".header_item svg", 2, {autoAlpha: 0}, 0.4).from(".header_bot_txt .header_item strong", 1.5, {autoAlpha: 0, y: 50}, 0.4).from(".header_item p", 1.5, {autoAlpha: 0, y: 50}, 0.4);
+			tl1.staggerFrom(".header_item_circle", 2, {drawSVG: "0%"}, 0.4, 'header_item')
+				.staggerFrom(".header_item svg", 2, {autoAlpha: 0}, 0.4, 'header_item')
+				.staggerFrom(".header_bot_txt .header_item strong", 1.5, {
+				autoAlpha: 0,
+				y: 50
+			}, 0.4, 'header_item')
+				.staggerFrom(".header_item p", 1.5, {autoAlpha: 0, y: 50}, 1, 'header_item');
 		}
 
 		// анимации - animate.css
@@ -227,7 +233,7 @@ $(document).ready(function () {
 			//var title =  $(this).data('title'); // для изменения title в модалке
 			$(".popup[data-modal=" + id + "]").toggle("fade", 200).find("form").css('display', 'block');
 			$(".popup[data-modal=" + id + "] input[name=form_name]").val(txt);
-			$(".popup[data-modal=" + id + "] img").attr('src' , img);
+			$(".popup[data-modal=" + id + "] img").attr('src', img);
 			// $(".popup[data-modal="+id+"] h2").html(title); // прописать в ссылку data-title="нужный title"
 
 			if (window.matchMedia("(min-width: 992px)").matches) {
