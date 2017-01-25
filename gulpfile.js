@@ -5,11 +5,12 @@ var 	gulp         = require('gulp'),
 		rename       = require('gulp-rename'),
 		browserSync  = require('browser-sync').create(),		
 		concat       = require('gulp-concat'),
-		uglify       = require('gulp-uglify');
-		imagemin 	 = require('gulp-imagemin');
-		imageminSvgo = require('imagemin-svgo');
-		spritesmith  = require('gulp.spritesmith');
-		livereload  = require('gulp-livereload');
+		uglify       = require('gulp-uglify'),
+		imagemin 	 = require('gulp-imagemin'),
+		imageminSvgo = require('imagemin-svgo'),
+		spritesmith  = require('gulp.spritesmith'),
+		livereload  = require('gulp-livereload'),
+		imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 gulp.task('browser-sync', ['styles', 'scripts'], function() {
 		browserSync.init({
@@ -36,7 +37,9 @@ gulp.task('styles', function () {
 
 gulp.task('compress-img', function () {
 	return gulp.src('app/img/*')
-        .pipe(imagemin({ proressive: true }))
+        .pipe(imagemin({ proressive: true,
+            optimizationLevel: 7,
+         }))        
         .pipe(gulp.dest('app/img'));
 });
 

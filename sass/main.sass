@@ -446,14 +446,16 @@ nav[canvas]
 			font: 18px "LatoBold"
 			color: #2f2f2f
 			&.td_main_color
-				background-color: #498ef3
+				background-color: rgba(73, 142, 243, 0.75)
 				color: #ffffff
+				border-top-left-radius: 5px
+				border-top-right-radius: 5px
 		tbody
 			tr
 				td
 					padding: 15px 38px
 					&.td_main_color
-						background-color: #498ef3
+						background-color: rgba(73, 142, 243, 0.75)
 						color: #ffffff
 						font-weight: bold
 		.grey
@@ -569,8 +571,46 @@ nav[canvas]
 			background-image: url('../img/modal_error_triangle.png')
 			top: -11px
 			left: 10px				
-			height: 8px			
-// Секия footer 
+			height: 8px
+//	Секция contacts
+.contacts
+	text-align: center
+	h2
+		margin-top: 0
+		margin-bottom: 80px
+	.contacts_items
+		margin-bottom: 160px
+	.contacts_item
+		display: inline-block
+		font-size: 20px
+		font-family: "LatoBold"
+		color: #2f2f2f
+		margin-right: 70px
+		&:last-of-type
+			margin-right: 0
+		i
+			margin-right: 10px
+			font-size: 30px
+			color: $main_color
+			vertical-align: middle
+		a
+			text-decoration: none
+			color: #2f2f2f
+			display: inline-block
+			vertical-align: middle
+			&:hover
+				text-decoration: none
+				color: #2f2f2f
+			&:active
+				text-decoration: none
+				color: #2f2f2f
+			&:focus
+				text-decoration: none
+				color: #2f2f2f
+		p
+			display: inline-block
+
+// Секия footer
 .footer
 	background-color: #353f49
 	min-height: 100px

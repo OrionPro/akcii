@@ -171,7 +171,7 @@ $(document).ready(function () {
 			$(".review h2, .review .rev_item .left_review, .review .rev_item .right_review").animated("fadeInUp");
 			$(".review .rev_item .rev_info_block").animated("fadeInRight");
 			$(".review .rev_item .rev_info_block_right").animated("fadeInLeft");
-			$(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr").animated("fadeInUp");
+			$(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr, .contacts .contacts_item ").animated("fadeInUp");
 			$(".question h2, .question p, .question strong , .question .inline_input input, .question .textarea_input textarea, .question button").animated("fadeInUp");
 		}
 
