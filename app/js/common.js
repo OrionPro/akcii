@@ -177,12 +177,12 @@ $(document).ready(function () {
 	// Карта
 	//  гугл карта
 	// The latitude and longitude of your business / place
-	var position = [53.2263991, 50.1967341];
-	var posMark = new google.maps.LatLng(53.2263991, 50.1967341);
+	var position = [53.2246193, 50.1997552];
+	var posMark = new google.maps.LatLng(53.2246193, 50.1997552);
 
 	function showGoogleMaps() {
 
-		var latLng = new google.maps.LatLng(53.2263991, 50.1967341);
+		var latLng = new google.maps.LatLng(53.2246193, 50.1997552);
 
 		var mapOptions = {
 			zoom: 14, // initialize zoom level - the max value is 21

@@ -76,7 +76,7 @@ p{padding:0;margin:0}
 .header_bot_txt .header_item p .third_number{font:32px LatoBold;line-height:.7}
 .header_bot_txt .header_item strong{font:20px LatoBold;color:#fff;display:block}
 .header_bot_txt .header_item .first{position:absolute;top:-64px;left:37px}
-.header_bot_txt .header_item .second{position:absolute;top:-64px;left:67px}
+.header_bot_txt .header_item .second{position:absolute;top:-64px;left:22px}
 .header_bot_txt .header_item .third{position:absolute;top:-70px;left:38px}
 .header_bot_txt .header_item .last_text{line-height:25px}
 #nav-button-label{height:35px;width:50px;-webkit-transition:.4s;transition:.4s;margin-top:6px;cursor:pointer;position:relative;z-index:1002;pointer-events:all}

@@ -1698,13 +1698,14 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .review .rev_item{margin-top:80px;position:relative}
 .review .rev_item .left_review{width:570px;height:350px}
 .review .rev_item .right_review{width:570px;height:350px;float:right}
-.review .rev_item .rev_info_block{padding:40px 50px 70px;background-color:#fff;position:absolute;-webkit-border-radius:4px;border-radius:4px;top:40px;right:45px;width:640px;height:260px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.5);box-shadow:0 0 10px 0 rgba(0,0,0,.5)}
-.review .rev_item p{font:18px LatoLight;color:#7e7e7e;height:131px;overflow:hidden}
+.review .rev_item .rev_info_block,.review .rev_item .rev_info_block_right{background-color:#fff;position:absolute;top:40px;width:640px;min-height:260px}
+.review .rev_item .rev_info_block{padding:40px 50px 70px;-webkit-border-radius:4px;border-radius:4px;right:45px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.5);box-shadow:0 0 10px 0 rgba(0,0,0,.5)}
+.review .rev_item p{font:18px LatoLight;color:#7e7e7e;height:136px;overflow:hidden}
 .review .rev_item strong{font:20px LatoBold;color:#2f2f2f;position:absolute;bottom:40px;left:50px}
 .review .rev_item a{position:absolute;bottom:40px;right:50px;color:#498ef3;text-decoration:underline;cursor:pointer}
 .review .rev_item a:hover{text-decoration:none}
 .review .rev_item a i{padding-right:10px;color:#498ef3}
-.review .rev_item .rev_info_block_right{padding:40px 50px;background-color:#fff;position:absolute;top:40px;width:640px;height:260px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.5);box-shadow:0 0 10px 0 rgba(0,0,0,.5);left:45px}
+.review .rev_item .rev_info_block_right{padding:40px 50px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.5);box-shadow:0 0 10px 0 rgba(0,0,0,.5);left:45px}
 .consultation{background:url(../img/consultation.jpg) no-repeat;background-size:cover;text-align:center;padding:150px 0;color:#fff}
 .consultation h5{font:44px LatoBold;margin-top:0;margin-bottom:50px}
 .consultation p{font:18px LatoLight}
@@ -1774,10 +1775,10 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .header .header_title h1{line-height:1.4}
 .header .header_bot_txt .header_item{margin:0 30px}
 .iphone{min-height:600px}
-.review .rev_item .rev_info_block{top:35px;width:520px;padding:40px;height:220px;right:15px}
-.review .rev_item .rev_info_block_right{top:35px;width:520px;padding:40px;height:220px;left:15px}
-.review .rev_item p{font-size:15px}
-.review .rev_item strong{font-size:17px;left:40px;bottom:35px}
+.review .rev_item .rev_info_block{top:35px;width:520px;padding:40px 40px 0;min-height:220px;right:15px}
+.review .rev_item .rev_info_block_right{top:35px;width:520px;padding:40px 40px 0;min-height:220px;left:15px}
+.review .rev_item p{font-size:15px;line-height:1.2}
+.review .rev_item strong{font-size:17px;left:40px;bottom:25px}
 .review .rev_item a{right:40px;bottom:35px;font-size:15px}
 .review .rev_item .left_review,.review .rev_item .right_review{width:490px;height:300px}
 .table_section .table tbody tr td{padding:15px}
@@ -1838,7 +1839,7 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade .apple .apple_calculate .month,.trade .apple .apple_calculate .month1{width:254px;left:60px}
 .trade .apple .apple_calculate button{margin:30px auto 0}
 .review .rev_item{margin-bottom:240px}
-.review .rev_item p{height:110px;margin-bottom:20px}
+.review .rev_item p{height:157px;margin-bottom:20px}
 .review .rev_item .left_review{width:470px;height:auto;margin-left:65px}
 .review .rev_item .right_review{width:470px;height:auto;margin-right:60px}
 .review .rev_item .rev_info_block{top:255px;right:85px}
