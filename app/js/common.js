@@ -174,7 +174,39 @@ $(document).ready(function () {
 			$(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr, .contacts .contacts_item ").animated("fadeInUp");
 			$(".question h2, .question p, .question strong , .question .inline_input input, .question .textarea_input textarea, .question button").animated("fadeInUp");
 		}
+	// Карта
+	//  гугл карта
+	// The latitude and longitude of your business / place
+	var position = [53.2263991, 50.1967341];
+	var posMark = new google.maps.LatLng(53.2263991, 50.1967341);
 
+	function showGoogleMaps() {
+
+		var latLng = new google.maps.LatLng(53.2263991, 50.1967341);
+
+		var mapOptions = {
+			zoom: 14, // initialize zoom level - the max value is 21
+			streetViewControl: false, // hide the yellow Street View pegman
+			scaleControl: true, // allow users to zoom the Google Map
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			center: posMark,
+			scrollwheel: false
+		};
+
+		map = new google.maps.Map(document.getElementById('googlemaps'),
+			mapOptions);
+
+		// Show the default red marker at the location
+		marker = new google.maps.Marker({
+			position: posMark,
+			map: map,
+			draggable: false,
+			animation: google.maps.Animation.DROP
+			// icon: "img/marker_img.png"
+		});
+	}
+
+	showGoogleMaps();
 		// инициализация скроллбара
 		$(".table_sections_wrap_table").mCustomScrollbar({
 			theme: "my-theme",
