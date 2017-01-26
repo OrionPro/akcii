@@ -19,6 +19,8 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp.spritesmith": "^6.2.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-jpegtran-gfw": "^0.2.0",
     "imagemin-svgo": "^5.2.0"
   }
 }

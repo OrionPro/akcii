@@ -142,15 +142,16 @@ nav[canvas]
 	
 //	Секция Iphone
 .iphone
-	background: url(../img/iphone_bg.jpg) center top
-	min-height: 750px
+	background-color: #f3f3f3
+	min-height: 660px
 	h2
 		margin-top: 190px
 		margin-bottom: 70px
 	p
 		font: 18px "LatoLight"
 		color: #2f2f2f
-
+	.iphone-img
+		margin-top: 190px
 //	Секция Trade
 
 .trade
@@ -159,6 +160,47 @@ nav[canvas]
 	h2
 		text-align: center
 		margin: 0px 0px 100px 0px
+		&.bmw
+			width: 844px
+			margin-left: 100px
+			text-align: left
+			font-size: 36px
+			font-family: "LatoLight"
+			color: #2f2f2f
+			display: inline-block
+			vertical-align: top
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 50px
+				right: -132px
+				background: url(../img/big_bmw_image.png) no-repeat
+				width: 647px
+				height: 242px
+			span
+				font-size: 36px
+				font-family: "LatoLight"
+				text-transform: uppercase
+				color: #2f2f2f
+				text-transform: uppercase
+				display: inline-block
+				margin-right: 20px
+				& + span
+					font-size: 150px
+					line-height: 125px
+					color: $main_color
+					display: inline-block
+					vertical-align: top
+					margin-right: 0
+					& + span
+						margin-top: -40px
+						font-size: 44px
+						font-family: "LatoBold"
+						color: inherit
+						line-height: 0
+						display: inline-block
+						text-transform: none
 	h3
 		font: 30px "LatoBold"
 		margin-top: 0px
@@ -212,7 +254,7 @@ nav[canvas]
 					position: absolute
 					bottom: 0
 					left: 0
-			#slider, #month ,#slider1, #month1
+			.slider, .month ,.slider1, .month1
 				width: 215px
 				height: 4px
 				background: #3b454e
@@ -238,7 +280,7 @@ nav[canvas]
 					left: 0px
 					top: 0px
 					position: absolute
-			#contentSlider, #contentMonth, #contentSlider1, #contentMonth1
+			.contentSlider, .contentMonth, .contentSlider1, .contentMonth1
 				position: absolute
 				width: 80px
 				top: -20px
@@ -247,7 +289,7 @@ nav[canvas]
 				border: 0px
 				color: #498ef3
 				font: 17px "LatoBold"
-			#contentMonth1, #contentMonth
+			.contentMonth1, .contentMonth
 				left: 47px
 			button
 				width: 430px
@@ -275,7 +317,8 @@ nav[canvas]
 				.text_money	
 					position: absolute
 					bottom: 0
-					left: 0	
+					left: -160px
+
 				.money, .money1
 					text-align: right
 					position: absolute
@@ -283,7 +326,7 @@ nav[canvas]
 					width: 140px
 					background-color: #f2f2f2
 					border: 0px
-					right: 0px
+					right: 120px
 					font: 23px "LatoBold"
 					color: #5CB888
 
@@ -392,21 +435,31 @@ nav[canvas]
 		font: 18px "LatoBold"
 		color: #2f2f2f	
 	.table
+		width: 100%
 		text-align: center
 		border-collapse: separate
 		.first_col
 			text-align: left
 			padding-left: 20px
 		th
+			height: 60px
 			font: 18px "LatoBold"
 			color: #2f2f2f
-			padding-bottom: 15px
+			&.td_main_color
+				background-color: rgba(73, 142, 243, 0.75)
+				color: #ffffff
+				border-top-left-radius: 5px
+				border-top-right-radius: 5px
 		tbody
 			tr
 				td
 					padding: 15px 38px
+					&.td_main_color
+						background-color: rgba(73, 142, 243, 0.75)
+						color: #ffffff
+						font-weight: bold
 		.grey
-			background-color: #f2f2f2			
+			background-color: #f2f2f2
 //	Секция question
 .question
 	background-color: #fff
@@ -518,8 +571,46 @@ nav[canvas]
 			background-image: url('../img/modal_error_triangle.png')
 			top: -11px
 			left: 10px				
-			height: 8px			
-// Секия footer 
+			height: 8px
+//	Секция contacts
+.contacts
+	text-align: center
+	h2
+		margin-top: 0
+		margin-bottom: 80px
+	.contacts_items
+		margin-bottom: 160px
+	.contacts_item
+		display: inline-block
+		font-size: 20px
+		font-family: "LatoBold"
+		color: #2f2f2f
+		margin-right: 70px
+		&:last-of-type
+			margin-right: 0
+		i
+			margin-right: 10px
+			font-size: 30px
+			color: $main_color
+			vertical-align: middle
+		a
+			text-decoration: none
+			color: #2f2f2f
+			display: inline-block
+			vertical-align: middle
+			&:hover
+				text-decoration: none
+				color: #2f2f2f
+			&:active
+				text-decoration: none
+				color: #2f2f2f
+			&:focus
+				text-decoration: none
+				color: #2f2f2f
+		p
+			display: inline-block
+
+// Секия footer
 .footer
 	background-color: #353f49
 	min-height: 100px
@@ -528,7 +619,22 @@ nav[canvas]
 		text-align: center
 		font: 18px "LatoLight"
 		color: #fff
-
+	.footer_copyright2
+		text-align: center
+		margin-bottom: 20px
+		a
+			display: inline-block
+			text-align: center
+			color: #ffffff
+			&:hover
+				text-decoration: none
+			&:active
+				text-decoration: none
+			&:focus
+				text-decoration: none
+		span
+			margin-right: 5px
+			
 //ALWAYS END
 @import "media"
 

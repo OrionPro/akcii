@@ -9,7 +9,8 @@
 			margin-top: 25px
 	.header_bot_txt
 		bottom: 25px
-
+	.header
+		min-height: 650px
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
 	/**/
@@ -35,6 +36,9 @@
 		.header_bot_txt
 			.header_item
 				margin: 0px 30px
+	.iphone
+		min-height: 600px
+
 	.review
 		.rev_item
 			.rev_info_block
@@ -69,35 +73,53 @@
 					td
 						padding: 15px
 	.trade
+		h2
+			&.bmw
+				width: 435px
+				display: block
+				margin: 0 auto 240px
+				&:after
+					content: ""
+					position: absolute
+					top: 245px
+					right: 0px
+					background: url(../img/big_bmw_image.png) no-repeat
+					background-size: contain
+					width: 500px
+					height: 200px
+				span
+					margin-right: 0
+					& + span
+						font-size: 150px
+						& + span
+							margin-top: 10px
+							font-size: 42px
+
 		.apple
 			.apple_trade
 			.apple_text
 				p
-				.first_text
+
 			.apple_calculate
 				.right
 					.text_money
-						left: -12px
+						left: -160px
 					.money
 						width: 115px
 						font-size: 21px
 						bottom: -3px
+						right: 100px
 					.money1
 						width: 115px
 						font-size: 21px
 						bottom: -3px
-					.team
-				.left
-					.text_money
-
-					.team
-				#slider
+				.slider
 					width: 170px
-				#slider1
+				.slider1
 					width: 170px
-				#month
+				.month
 					width: 170px
-				#month1
+				.month1
 					width: 170px
 				button
 					margin: 30px auto 0
@@ -119,7 +141,11 @@
 	.footer
 		p
 			font-size: 15px
-
+	.contacts
+		.contacts_item
+			display: block
+			margin-bottom: 30px
+			margin-right: 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px)
 	/**/
@@ -133,9 +159,14 @@
 		display: block
 	.header_modal
 		margin-top: 40px
+	.iphone-img
+		text-align: center
+		img
+			display: inline-block
 	.trade
 		h2
-			font-size: 30px
+			margin-top: 80px
+			font-size: 36px
 	.footer
 		p
 			padding-top: 30px
@@ -193,6 +224,7 @@
 				height: 390px
 	.iphone
 		h2
+			margin-top: 80px
 			margin-bottom: 45px
 			line-height: 1.5
 		p
@@ -219,8 +251,6 @@
 				.right
 					width: 48%
 					height: 154px
-					.text_money
-						left: 60px
 					.money
 						width: 123px
 						text-align: left
@@ -236,16 +266,16 @@
 						left: 60px
 					.team
 						left: 60px
-				#slider
+				.slider
 					width: 251px
 					left: 60px
-				#slider1
+				.slider1
 					width: 251px
 					left: 60px
-				#month
+				.month
 					width: 254px
 					left: 60px
-				#month1
+				.month1
 					width: 254px
 					left: 60px
 				button
@@ -350,9 +380,33 @@
 		h2
 			margin-top: 100px
 			font-size: 23px
+
 	.trade
 		h2
 			font-size: 23px
+			padding-left: 15px
+			padding-right: 15px
+			&.bmw
+				width: 300px
+				display: block
+				margin: 0 auto 140px
+				&:after
+					content: ""
+					position: absolute
+					top: 170px
+					right: 0px
+					background: url(../img/big_bmw_image.png) no-repeat
+					background-size: contain
+					width: 300px
+					height: 100px
+				span
+					font-size: 21px
+					& + span
+						font-size: 96px
+						line-height: 80px
+						& + span
+							margin-top: 10px
+							font-size: 25px
 		h3
 			font-size: 18px
 		.apple
@@ -371,10 +425,13 @@
 					display: block
 					margin-left: 22px
 					.text_money
+						left: 60px
 					.money
 						width: 118px
+						right: -28px
 					.money1
 						width: 118px
+						right: -28px
 					.team
 				.left
 					width: 290px
@@ -383,12 +440,12 @@
 					margin-left: 22px
 					.text_money
 					.team
-				#slider
-				#slider1
+				.slider
+				.slider1
 
-				#month
+				.month
 
-				#month1
+				.month1
 
 				button
 					margin: 60px auto 0
@@ -488,20 +545,20 @@
 						left: 0
 					.text_money
 						left: 0
-				#slider
+				.slider
 					left: 0
-				#slider1
+				.slider1
 					left: 0
-				#contentSlider
+				.contentSlide
 					left: 7px
 					top: -30px
-				#contentSlider1
+				.contentSlider1
 					left: 7px
 					top: -30px
-				#contentMonth
+				.contentMonth
 					left: 32px
 					top: -24px
-				#contentMonth1
+				.contentMonth1
 					left: 32px
 					top: -24px
 				.right
@@ -513,15 +570,25 @@
 						width: 130px
 						font-size: 20px
 						bottom: -1px
+						right: 28px
 					.money1
 						width: 130px
 						font-size: 20px
 						bottom: -1px
-				#month
+						right: 28px
+				.month
 					left: 0
-				#month1
+				.month1
 					left: 0
-
+	.popup
+		&.pop4
+			.dm-modal
+				max-width: 38em
+@media only screen and (max-width: 568px) and (orientation: landscape)
+	.popup
+		&.pop4
+			.dm-modal
+				max-width: 30em
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 520px)
 	/**/
@@ -531,6 +598,11 @@
 	.dm-modal
 		input[type=submit]
 			width: 100%
+	.contacts
+		.contacts_item
+			font-size: 15px
+			a
+
 
 @media only screen and (max-width: 480px)
 	/**/
@@ -558,20 +630,20 @@
 						left: 0
 					.text_money
 						left: 0
-				#slider
+				.slider
 					left: 0
-				#slider1
+				.slider1
 					left: 0
-				#contentSlider
+				.contentSlider
 					left: 7px
 					top: -30px
-				#contentSlider1
+				.contentSlider1
 					left: 7px
 					top: -30px
-				#contentMonth
+				.contentMonth
 					left: 32px
 					top: -24px
-				#contentMonth1
+				.contentMonth1
 					left: 32px
 					top: -24px
 				.right
@@ -579,21 +651,23 @@
 						left: 0
 					.text_money
 						left: 0
+						right: 0
 					.money
 						width: 130px
 						font-size: 20px
 						bottom: -1px
+						right: 0
 					.money1
 						width: 130px
 						font-size: 20px
 						bottom: -1px
-				#month
+						right: 0
+				.month
 					left: 0
-				#month1
+				.month1
 					left: 0
 	.review
 		padding: 100px 0
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
 	/**/
