@@ -174,6 +174,11 @@ $(document).ready(function () {
 			$(".consultation h5 , .consultation p, .consultation button, .table_section h2, .table_section .table tr, .contacts .contacts_item ").animated("fadeInUp");
 			$(".question h2, .question p, .question strong , .question .inline_input input, .question .textarea_input textarea, .question button").animated("fadeInUp");
 		}
+	//Клик на графике убирает маску
+	$(".apple_trade_mask").click( function () {
+		$(this).addClass("active");
+	});
+
 	// Карта
 	//  гугл карта
 	// The latitude and longitude of your business / place

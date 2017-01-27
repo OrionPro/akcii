@@ -215,7 +215,19 @@ nav[canvas]
 			padding-right: 10px
 		.apple_trade
 			height: 380px
-			padding-bottom: 50px
+			margin-bottom: 50px
+			position: relative
+		.apple_trade_mask
+			width: 100%
+			height: 100%
+			z-index: 10
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			cursor: pointer
+			&.active
+				display: none
 		.apple_text
 			p
 				padding-bottom: 25px

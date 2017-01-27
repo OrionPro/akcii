@@ -1668,7 +1668,9 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade .apple{padding-bottom:190px}
 .trade .apple .apple_ico{padding-bottom:15px;padding-right:10px}
 .trade .apple .google_ico{padding-bottom:10px;padding-right:10px}
-.trade .apple .apple_trade{height:380px;padding-bottom:50px}
+.trade .apple .apple_trade{height:380px;margin-bottom:50px;position:relative}
+.trade .apple .apple_trade_mask{width:100%;height:100%;z-index:10;position:absolute;top:0;right:0;left:0;cursor:pointer}
+.trade .apple .apple_trade_mask.active{display:none}
 .trade .apple .apple_text p{padding-bottom:25px;font:18px LatoLight}
 .trade .apple .apple_text p strong{font:18px LatoBold}
 .trade .apple .apple_text .first_text{padding-right:55px}
