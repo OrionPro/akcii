@@ -1663,7 +1663,7 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .trade h2.bmw:after{content:"";position:absolute;top:50px;right:-132px;background:url(../img/big_bmw_image.png) no-repeat;width:647px;height:242px}
 .trade h2.bmw span{text-transform:uppercase;margin-right:20px}
 .trade h2.bmw span+span{font-size:150px;line-height:125px;color:#498ef3;display:inline-block;vertical-align:top;margin-right:0}
-.trade h2.bmw span+span+span{margin-top:-40px;font-size:44px;font-family:LatoBold;color:inherit;line-height:0;display:inline-block;text-transform:none}
+.trade h2.bmw span+span+span{margin-top:-40px;font-size:44px;font-family:LatoBold;color:inherit;line-height:.1px;display:inline-block;text-transform:lowercase}
 .trade h3{font:30px LatoBold;margin-top:0;margin-bottom:40px}
 .trade .apple{padding-bottom:190px}
 .trade .apple .apple_ico{padding-bottom:15px;padding-right:10px}
@@ -1865,11 +1865,11 @@ nav[canvas]{position:fixed;top:20px;left:20px;display:none;z-index:100}
 .header .header_bot_txt .header_item:nth-last-of-type(2){margin:0 auto 100px}
 .iphone h2{margin-top:100px;font-size:23px}
 .trade h2{font-size:23px}
-.trade h2.bmw{width:300px;display:block;margin:0 auto 140px}
+.trade h2.bmw{width:300px;display:block;margin:0 auto 140px;text-align:center}
 .trade h2.bmw:after{content:"";position:absolute;top:170px;right:0;background:url(../img/big_bmw_image.png) no-repeat;background-size:contain;width:300px;height:100px}
 .trade h2.bmw span{font-size:21px}
 .trade h2.bmw span+span{font-size:96px;line-height:80px}
-.trade h2.bmw span+span+span{margin-top:10px;font-size:25px}
+.trade h2.bmw span+span+span{margin-top:10px;font-size:24px}
 .trade h3{font-size:18px}
 .trade .apple .apple_trade{height:290px}
 .trade .apple .apple_text p{font-size:14px}
