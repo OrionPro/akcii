@@ -51,7 +51,7 @@ p{padding:0;margin:0}
 .modal_form_input_wrap .modal_input_error.form_error{display:block}
 .modal_form_input_wrap .modal_error_chest_img{width:9px;position:relative;background-image:url(../img/modal_error_chest_img.png);top:-5px;left:0;height:9px}
 .modal_form_input_wrap .modal_error_triangle{width:9px;position:relative;background-image:url(../img/modal_error_triangle.png);top:-4px;left:10px;height:8px}
-.header{text-align:center;min-height:840px;height:100vh;background:url(../img/more.gif) center top no-repeat;background-size:cover}
+.header{text-align:center;min-height:840px;height:100vh;background:url(../img/more.gif) center top no-repeat;background-size:cover;position:relative}
 .header i{display:none}
 .header_logo,.header_logo a,.header_nav,.header_nav ul li{display:inline-block}
 .header .container{height:100%;min-height:100%;position:relative}
